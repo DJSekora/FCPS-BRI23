@@ -6,9 +6,14 @@ This repository holds code and additional resources for the CTY 2023 FCPS A cour
 Logic Gate Simulator: https://academo.org/demos/logic-gate-simulator/
 
 ## Further Reading (warning: may be technical)
-Recent article on improving computer multiplication: https://www.quantamagazine.org/mathematicians-discover-the-perfect-way-to-multiply-20190411/
+Recent article on improving computer multiplication:
+https://www.quantamagazine.org/mathematicians-discover-the-perfect-way-to-multiply-20190411/
 
-Floating Point Numbers: https://www.doc.ic.ac.uk/~eedwards/compsys/float/
+Floating Point Numbers:
+https://www.doc.ic.ac.uk/~eedwards/compsys/float/
 
-Transistors: https://en.wikipedia.org/wiki/MOSFET (technical, but well written for a wikipedia article)
+Transistors:
+https://en.wikipedia.org/wiki/MOSFET (technical, but well written for a wikipedia article)
 
+A Historical Chatbot:
+http://psych.fullerton.edu/mbirnbaum/psych101/Eliza.htm
