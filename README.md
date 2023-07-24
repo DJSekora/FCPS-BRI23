@@ -17,3 +17,6 @@ https://en.wikipedia.org/wiki/MOSFET (technical, but well written for a wikipedi
 
 A Historical Chatbot:
 http://psych.fullerton.edu/mbirnbaum/psych101/Eliza.htm
+
+Object-Oriented Programming:
+https://khalilstemmler.com/articles/object-oriented/programming/4-principles
