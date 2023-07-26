@@ -26,7 +26,11 @@ https://nrich.maths.org/2478
 
 ## Search Terms of Interest
 Recursion: Solving recurrences
+
 Runtime Analysis: Big O notation
+
 Encryption: Vigenere Cipher, RSA encryption (background: prime factorization)
+
 Compression: Huffman Coding, LZW algorithm
+
 Data Structures: Linked Lists, Stacks, Queues, Binary Trees (also complete binary trees, balanced binary trees, binary search trees), Heaps
