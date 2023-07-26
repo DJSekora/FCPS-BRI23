@@ -20,12 +20,12 @@ public class SortingTimeTest
     }
     
     long start = System.currentTimeMillis();
-    SortsExample.mergeSort(myArray);
+    SortsExample.bubbleSort(myArray);
     long end = System.currentTimeMillis();
     System.out.println(end - start);
     
     start = System.currentTimeMillis();
-    SortsExample.mergeSort(sorted);
+    SortsExample.bubbleSort(sorted);
     end = System.currentTimeMillis();
     System.out.println(end - start);
   }
