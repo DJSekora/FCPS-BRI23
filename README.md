@@ -20,3 +20,6 @@ http://psych.fullerton.edu/mbirnbaum/psych101/Eliza.htm
 
 Object-Oriented Programming:
 https://khalilstemmler.com/articles/object-oriented/programming/4-principles
+
+Gauss's Method for Computing Sums of Consecutive Integers
+https://nrich.maths.org/2478
