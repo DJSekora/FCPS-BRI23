@@ -24,7 +24,11 @@ https://khalilstemmler.com/articles/object-oriented/programming/4-principles
 Gauss's Method for Computing Sums of Consecutive Integers
 https://nrich.maths.org/2478
 
-## Search Terms of Interest
+## Search Terms of Interest for Enrichment
+Boolean logic: Propositional logic, first-order logic, equivalence laws (e.g. De Morgan's Laws)
+
+Circuits: Flip-flops, Switches, Multiplexers, Transistors
+
 Recursion: Solving recurrences
 
 Runtime Analysis: Big O notation
