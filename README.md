@@ -18,11 +18,27 @@ https://en.wikipedia.org/wiki/MOSFET (technical, but well written for a wikipedi
 A Historical Chatbot:
 http://psych.fullerton.edu/mbirnbaum/psych101/Eliza.htm
 
+Randomness:
+http://random.org/randomness
+
 Object-Oriented Programming:
 https://khalilstemmler.com/articles/object-oriented/programming/4-principles
 
 Gauss's Method for Computing Sums of Consecutive Integers
 https://nrich.maths.org/2478
+
+FPS and the Illusion of Motion:
+https://paulbakaus.com/the-illusion-of-motion/
+
+Why 60hz is the standard frequency for AC current (electricity):
+https://www.allaboutcircuits.com/news/why-is-the-us-standard-60-hz/
+
+How many FPS can we actually see in?:
+https://azretina.sites.arizona.edu/node/837
+
+Why some video is 59.94 or 23.976hz:
+https://en.wikipedia.org/wiki/NTSC
+
 
 ## Search Terms of Interest for Enrichment
 Boolean logic: Propositional logic, first-order logic, equivalence laws (e.g. De Morgan's Laws)
