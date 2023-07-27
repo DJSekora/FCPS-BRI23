@@ -2,8 +2,10 @@
 
 This repository holds code and additional resources for the CTY 2023 FCPS A course at the Bristol site. Check back often during the camp, it will be updated frequently!
 
-## Useful Links
+## Interesting Links
 Logic Gate Simulator: https://academo.org/demos/logic-gate-simulator/
+
+Demos of Graphical Oddities on Computer Monitors (found by William): https://www.testufo.com
 
 ## Further Reading (warning: may be technical)
 Recent article on improving computer multiplication:
