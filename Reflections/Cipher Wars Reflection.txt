@@ -1,0 +1,14 @@
+CIPHER WARS REFLECTION
+Answer the following questions on paper or in a text document, hand in by end of class:
+
+1. How did you contribute to your group during the Planning Phase (the first class session, where we met with the Cryptology students)?
+
+2. How did you contribute to your group during the Implementation Phase (the second class session, where we prepared our encryption/decryption code)?
+
+3. How did you contribute to your group during the Messaging Phase (the last class session, where we sent our messages)?
+
+4. Do you feel that you used your time wisely (just you, not your teammates)?
+
+5. If you had the chance to go back in time and do it again, what would you change about your team's approach?
+
+6. Evaluate your teammates. Who exhibited leadership, who performed well under pressure, and who didn't pull their weight?
