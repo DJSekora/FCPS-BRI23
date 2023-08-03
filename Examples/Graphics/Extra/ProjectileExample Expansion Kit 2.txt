@@ -65,3 +65,9 @@ In the paintComponent method:
     {
       g.drawLine(x,0,x,600);
     }
+
+
+
+Further ideas for expansion here:
+ * Add world boundaries, so the player can't move beyond certain coordinates
+ * If you want to center the screen on a different MovingSprite, make sure to modify the xOffset and yOffset calculation in the paintComnponent method accordingly.
