@@ -1,0 +1,128 @@
+This file contains instructions on how you might expand on ProjectileExample. The first part of the file is an overview, the second part of the file contains an example implementation.
+
+OPTION 1: Add AI for the target
+ * Add a new instance variable to keep track of the next set of instructions for the target
+
+ * In the main loop, tell the target to follow its next instruction
+
+ * Change the set of instructions every once in a while to make it look like it's acting different at different times. Write a few different types of instructions: move left, move towards the player, move away from the player, etc..
+
+ * Depending on what kinds of instructions you send, the AI might accidentally move off the screen. You can either stop it from moving if it tries to move too far, or you can teleport it somewhere random within the game bounds if it does move offscreen.
+
+
+OPTION 2: Lock the camera on the player so we can move farther than the normal game bounds. See Expansion Kit 2 for details.
+
+
+
+
+
+
+
+
+
+EXAMPLE IMPLEMENTATION OF OPTION 1
+In the instance variable section:
+ * change target to a MovingSprite instead of a Collider
+ * add two new instance variables to keep track of the AI instructions:
+  int[][] targetAI;
+  int aiInstructionIndex = 0;
+
+
+Add new methods to manage the AI:
+ * Add a method that will be called every time the mainLoop runs. It should execute the next instruction, then advance the counter :
+---------------------------------------------------------------------- BEGIN CODE
+  public void moveAI()
+  {
+    target.moveX(targetAI[aiInstructionIndex][0]);
+    target.moveY(targetAI[aiInstructionIndex][1]);
+  
+    aiInstructionIndex++;
+    if(aiInstructionIndex >= targetAI.length)
+    {
+      targetAI = getNewInstructionSet();
+      aiInstructionIndex = 0;
+    }
+  }
+---------------------------------------------------------------------- END CODE
+
+ * Add a way to generate the next instruction set. In this example, we have three types of instructions: move left, move right, and move away from player. You can add more types in the same way - maybe you could add move towards player, move diagonally, zigzag, sit still, etc.. When making each type, we use a loop to fill in the array with appropriate instructions. This example makes the target always move at a speed of 1; if you want it to be harder, you could increase the speed or make it random.
+---------------------------------------------------------------------- BEGIN CODE
+  public int[][] getNewInstructionSet()
+  {
+    // randomize length of instruction set
+    int duration = rng.nextInt(100) + 20;
+    
+    int[][] ret = new int[duration][2];
+    
+    // Pick a random type of movement
+    int type = rng.nextInt(3);
+    
+    // Type: move left
+    if(type == 0)
+    {
+      for(int i=0; i<duration; i++)
+      {
+        ret[i][0] = -1; // x speed to move at
+        ret[i][1] = 0; // y speed to move at
+      }
+    }
+    
+    // Type: move right
+    if(type == 1)
+    {
+      for(int i=0; i<duration; i++)
+      {
+        ret[i][0] = 1;
+        ret[i][1] = 0;
+      }
+    }
+    
+    // Type: move away from player's last known position
+    if(type == 2)
+    {
+      int xd, yd;
+      if(player.x > target.x)
+      {
+        xd = -1;
+      }
+      else
+      {
+        xd = 1;
+      }
+      if(player.y > target.y)
+      {
+        yd = -1;
+      }
+      else
+      {
+        yd = 1;
+      }
+      for(int i=0; i<duration; i++)
+      {
+        ret[i][0] = xd;
+        ret[i][1] = yd;
+      }
+    }
+    return ret;
+  }
+---------------------------------------------------------------------- END CODE
+
+
+In the constructor:
+ * Update the line that initializes target to make it a new MovingSprite instead of a new Collider:
+  target = new MovingSprite(300,100,targetImage);
+ * Initialize the targetAI array:
+  targetAI = getNewInstructionSet();
+
+
+In the mainLoop():
+ * Call our method from above to move the AI every frame. You can choose whether this happens before or after the player and bullets move:
+  moveAI();
+
+
+If you want the AI to always stay on the screen, check its position after it moves and put it back in bounds if it has left. In this example, we put it at a random position, and the screen bounds are (0,0) to (800,300). This code can be inserted into the moveAI method, right after you move the target:
+    if(target.x < 0 || target.x >= 800 || target.y < 0 || target.y >= 300)
+    {
+      target.x = rng.nextInt(800);
+      target.y = rng.nextInt(300);
+    }

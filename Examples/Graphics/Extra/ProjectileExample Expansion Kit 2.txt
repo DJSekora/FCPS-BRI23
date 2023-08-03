@@ -1,0 +1,67 @@
+This file contains instructions on how you might expand on ProjectileExample. The first part of the file is an overview, the second part of the file contains an example implementation.
+
+OPTION 1: Add AI for the target. See Expansion Kit 1 for details.
+
+OPTION 2: Lock the camera on the player so we can move farther than the normal game bounds.
+ * Add a background so we can tell when we're moving. You can draw a grid or use images.
+
+ * Have a way to tell the width and height of the screen. To start, you can just hardcode these in variables, although a more professional version would determine them based on the window size.
+
+ * In the paintComponent method, always draw the player at the center of the screen. Then, draw everything else (including the background) with an offset based on the player's stored position. For example, if an object is at (x, y), draw it at (x - player.x + screenWidth/2, y - player.y + screenHeight/2) instead.
+
+ * If you're drawing a grid as your background and you want it to appear to extend infinitely, you can just offset your grid by (boxSize % player.x, boxSize % player.y) instead.
+
+
+
+
+
+
+
+
+EXAMPLE IMPLEMENTATION OF OPTION 2
+In the instance variable section:
+ * Make variables to hold the center X and Y positions (half the screen width and height, respectively). We will need these for centering the player:
+  int centerX = 800;
+  int centerY = 600;
+
+
+In the MovingSprite class (bottom of the file):
+ * We need a drawTo method that accepts an offset, so we can draw things based on their relative position to the player instead of their raw coordinates. You can either modify the existing method, or add a new one:
+  public void drawTo(Graphics g, int xOffset, int yOffset)
+  {
+    g.drawImage(image, x - xOffset, y - yOffset, null);
+  }
+
+
+In the Collider class (just above the MovingSprite class):
+ * Add a drawTo method that accepts an offset (you don't have to do this if you change target into a MovingSprite variable instead of a Collider variable, or if you use casting when you draw it):
+  public void drawTo(Graphics g, int xOffset, int yOffset)
+  {
+    // leave blank
+  }
+
+
+In the paintComponent method:
+ * Use our new drawTo method to replace the old drawing logic with the new offset version (make sure to do this for EVERYTHING you draw in the scene):
+---------------------------------------------------------------------- BEGIN CODE
+    int xOffset = player.x - centerX;
+    int yOffset = player.y - centerY;
+    
+    player.drawTo(g, xOffset, yOffset);
+    target.drawTo(g, xOffset, yOffset);
+    for(MovingSprite s:projectiles)
+    {
+      s.drawTo(g, xOffset, yOffset);
+    }
+---------------------------------------------------------------------- END CODE
+
+ * Draw a grid so we can see movement happen (do this just before drawing anything else so the grid is the background):
+    int gridSize = 50;
+    for(int y = -yOffset % gridSize; y < 600; y+=gridSize)
+    {
+      g.drawLine(0,y,800,y);
+    }
+    for(int x = -xOffset % gridSize; x < 800; x+=gridSize)
+    {
+      g.drawLine(x,0,x,600);
+    }
