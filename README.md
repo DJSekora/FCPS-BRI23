@@ -1,5 +1,12 @@
 # FCPS-BRI23
 
+## NEW STUFF 8/5/23
+I've added a list of projects ("Project Ideas.txt") that should be accessible based on what we did in the course. If you see this message, please share the existence of this list with any of your classmates whose contact information you have.
+Some of these projects are of course harder than others, but most of them allow for varying levels of difficulty depending on how deeply you want to get into them.
+Remember, you can do everything we did in class at home on your own computer. And, the best way to learn and keep your skills sharp is to practice with projects you are personally interested in.
+
+## Overview
+
 This repository holds code and additional resources for the CTY 2023 FCPS A course at the Bristol site. Check back often during the camp, it will be updated frequently!
 
 ## Interesting Links
