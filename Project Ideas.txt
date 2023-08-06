@@ -1,0 +1,105 @@
+2D FREE MOVEMENT GAMES
+Genres of games:
+Platformer
+Dungeon crawler
+Racing game
+Space shooter
+Wave-based survival
+
+Camera options to consider:
+Fixed one-screen
+Follows player
+Controllable separately of player
+
+
+GRID-BASED GAMES
+2048 (or Threes)
+Battleship
+Bejewled (match-three)
+Checkers
+Chess
+Connect Four
+Conway's Game of Life
+Minesweeper
+Slot machine
+Sudoku
+Tetris
+
+
+WORD GAMES
+Anagram generator
+Text Twist (Spelling Bee, Wordscapes, etc., where you have a set of letters and have to find words using only those letters. May or may not allow repeating the same letter)
+Typing practice game
+Word search (player or solver)
+Wordle (player or solver)
+
+
+OTHER GAMES
+Blackjack/Poker
+Board games (Monopoly, Uno)
+Clicker Games (like Cookie Clicker)
+Puzzle Games (like the one where you sort colored liquids, or the one where you flip all the light switches to the same color)
+Tower Defense
+Yahtzee (or similar dice-based game)
+
+
+TEXT-BASED PROJECTS
+Encryption/decryption protocol
+Poetry generator
+Spelling checker
+Text compression
+Text editor (optional features: save/load, word wrap, font selection)
+Word counter (count the number of occurrences of each word in a file and sort them by frequency)(recommended: look up hash tables)
+
+
+IMAGE-BASED PROJECTS
+Fractal drawer (requires some math)
+Image compressor (lossy or loss-less)
+Image editor (basic coloring, resizing, cropping, flipping, rotating, etc.)
+Image file format creation (probably necessary to do this for the compressor)
+Tileset editor for a 2D game
+"Video player" (read in a series of image files, display them in sequence with a fixed delay)
+
+
+OTHER PROJECTS
+BigInteger class (write an object type that uses arrays to allow storage of and computation with integers larger than 64 bits)
+Circuit simulator
+File browser (like Windows Explorer)
+Graphical GUI builder
+Graphing calculator
+Interactive animation (pressing different keys or buttons generates different types of animations, preferably customizable)
+Machine learning algorithm (simple, like a perceptron)
+Make your own Terminal/Command Prompt (implement: cd, ls, cat, touch, text editor)
+Monte Carlo simulations to estimate probability (repeat a randomized trial many times, count the number of times each outcome appears - can use this to estimate poker odds, Monty Hall problem, etc.)
+Physics particle simulation
+Virtual piano (requires learning about sound synthesis)
+Write a code generator
+Write your own toy programming language ("compiles" to Java code)
+
+
+RESEARCH TOPICS
+AI safety and the Singularity
+Boolean (propositional) logic rules for simplifying expressions (and/or circuits)
+Cheat codes for video games (how they're discovered, how they're injected)
+Chip and circuit design and optimization (including physical limits on size)
+Computational complexity (big O notation for space and time requirements)
+Cryptocurrency (blockchain, ethics, mining, etc.)
+Data structures and their space/time considerations:
+ * linked lists with and without tail reference/double linking
+ * queus and stacks, comparing implementations with ArrayList vs LinkedList
+ * hash tables
+ * binary trees (including applications of binary search trees and heaps)
+ * priority queues
+Encryption (historical, and/or modern standards like RSA, AES, etc.)
+Frame rates
+Graph theory
+History of long-term computer information storage (magnetic tape, HDD/spinning disk drives, SSD/solid state drives, etc.)
+Machine learning (historical, and/or modern trends like how ChatGPT works)
+Networking and the Internet
+Operating systems (history, how they're built, what they're for)
+Parallel computing (can include graphics cards)
+Programming languages (how and why languages are made, how a selection of basic programs works in several different languages, etc.)
+Search algorithms (breadth-first search, depth-first search, uniform cost search, A*)
+Theory of computation (start with Discrete Finite Automata (DFA) and then Context-Free Grammars (CFG))
+Virtual machines
+Viruses (but don't build and run one please)
